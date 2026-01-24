@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: green;
+  --color-secondary: teal;
+}
+
+.navv {
+  color: [#632EE3];
+}
+
+.my-btn {
+    /* color:  [#ba93f1]; */
+    @apply btn btn-soft btn-primary text-[16px] border-none  hover:bg-gradient-to-r from-[#632EE3] to-[#ba93f1];
+}
+ 
+.active-btn {
+    @apply btn btn-accent text-white border-none bg-gradient-to-r from-[#4feb59] to-[#315805];
+}
+ 
