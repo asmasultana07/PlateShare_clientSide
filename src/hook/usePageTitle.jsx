@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const usePageTitle = (title) => {
     useEffect(() => {
-        document.title = `PlateShare - ${title}`;
+        document.title = `PlateShare | ${title}`;
     }, [title]);
 }
 
