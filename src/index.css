@@ -8,21 +8,24 @@
   --color-secondary: teal;
 }
 
-.navv {
-  color: #3f583c;
+
+.text-bb {
+  color: #05313c;
 }
- /* 0.0112219 0.00861423 */
+.text-pp {
+  color: #82898e;
+}
 
 .my-btn {
-    /* color:  [#ba93f1]; */
-    @apply btn btn-soft btn-primary text-[16px] border-none hover:bg-[#485d1a];
+    @apply btn btn-soft btn-primary text-[18px] border-none hover:bg-[#485d1a];
 }
 .sign-btn {
-    /* color:  [#ba93f1]; */
     @apply btn btn-soft btn-primary text-[16px] text-[#315805] border-none bg-gradient-to-r from-[#4feb59] to-[#315805];
 }
  
 .active-btn {
     @apply btn btn-accent text-white text-[20px] border-none bg-gradient-to-r from-[#4feb59] to-[#315805];
 }
- 
+.donate-btn {
+    @apply border-2 border-green-200 px-6 py-2 rounded-md font-semibold text-green-200 text-[20px] hover:border-none hover:bg-[#485d1a] hover:text-white;
+}

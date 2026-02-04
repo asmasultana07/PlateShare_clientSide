@@ -20,7 +20,7 @@ const Navbar = () => {
                         <Link to="/" >
                             <div className="flex justify-center items-center hover:scale-105">
                                 <img src={logoImage} alt="" className="w-12 h-12" />
-                                <p className="btn border-none p-1 text-[20px] md:text-[28px]  bg-gradient-to-r from-[#4feb59] to-[#315805] bg-clip-text text-transparent">
+                                <p className="btn border-none p-1 text-[24px] md:text-[28px]  bg-gradient-to-r from-[#4feb59] to-[#315805] bg-clip-text text-transparent">
                                     PlateShare
                                 </p>
                             </div>
@@ -36,8 +36,8 @@ const Navbar = () => {
 
                     <div className="navbar-end gap-3">
                         <div className="navbar-end  hidden lg:flex">
-                            <Link href="" target="_blank" className="my-btn"> Register</Link>
-                            <Link href="" target="_blank" className="my-btn ml-3">  Login</Link>
+                            <Link to={'/registration'}  className="my-btn"> Register</Link>
+                            <Link to={'/login'}  className="my-btn ml-3">  Login</Link>
                         </div>
 
                         {/* // small device */}
