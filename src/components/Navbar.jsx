@@ -1,8 +1,12 @@
-import React from "react"
+import React, { useContext } from "react"
 import MyContainer from "./MyContainer"
 import { Link, NavLink } from "react-router"
 import logoImage from "../assets/logo.png"
+import { AuthContext } from "../Provider/AuthProvider"
+
+
 const Navbar = () => {
+    const { user,loading } = useContext(AuthContext);
 
     const getNavActive = ({ isActive }) => {
         const navLink = "text-green-700 text-[20px] font-semibold active-btn";
@@ -15,8 +19,7 @@ const Navbar = () => {
         <nav>
             <MyContainer>
                 <div className="navbar bg-base-100 shadow-sm ">
-                    <div className="navbar-start">
-
+                    <div className="navbar-start">                   
                         <Link to="/" >
                             <div className="flex justify-center items-center hover:scale-105">
                                 <img src={logoImage} alt="" className="w-12 h-12" />
@@ -25,8 +28,8 @@ const Navbar = () => {
                                 </p>
                             </div>
                         </Link>
-
                     </div>
+
                     <div className="navbar-center hidden lg:flex">
                         <ul className="flex items-center gap-6">
                             <li> <NavLink to="/" className={getNavActive}>  Home </NavLink> </li>
@@ -35,10 +38,22 @@ const Navbar = () => {
                     </div>
 
                     <div className="navbar-end gap-3">
-                        <div className="navbar-end  hidden lg:flex">
-                            <Link to={'/registration'}  className="my-btn"> Register</Link>
-                            <Link to={'/login'}  className="my-btn ml-3">  Login</Link>
+                        {loading? (
+                             <LoadingSpinner />
+                        )  : user ? (
+                            <div className="navbar-end  hidden lg:flex">
+                            <button className="my-btn ml-3">  Logout</button> 
                         </div>
+                        ) : (
+                            <div className="navbar-end  hidden lg:flex">
+                              <Link to={'/registration'}  className="my-btn"> Register</Link>
+                              <Link to={'/login'}  className="my-btn ml-3">  Login</Link>
+                        </div>
+                        )
+                        }
+                        
+
+
 
                         {/* // small device */}
                         <div className="dropdown dropdown-end">
@@ -55,6 +70,7 @@ const Navbar = () => {
                         </div>
 
                     </div>
+
                 </div>
             </MyContainer>
         </nav>
