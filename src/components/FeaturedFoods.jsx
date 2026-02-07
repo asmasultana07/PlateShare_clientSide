@@ -4,17 +4,16 @@ import LoadingSpinner from "./LoadingSpinner";
 
 const FeaturedFood = () => {
 
-    const { loading } = useApps();
-    const showFood = apps.slice(0,8); 
+    // const { loading } = useApps();
+    // const showFood = apps.slice(0,8); 
 
-    if (loading) return (  <LoadingSpinner />);
+    // if (loading) return (  <LoadingSpinner />);
 
-    return (
-        
-      <div className="bg-[#f3f3f3] p-10 md:p-20">
+    return ( 
+         <div className="bg-[#f3f3f3] p-10 md:p-20">
         <div className="text-center">
-            <h1 className="text-bb font-bold text-4xl md:text-5xl">Trending Apps</h1>
-            <p className="text-pp text-xl mt-5">Explore All Trending Apps on the Market developed by us</p>
+            <h1 className="text-bb font-bold text-4xl md:text-5xl">Feature Foods</h1>
+            <p className="text-pp text-xl mt-5">Explore All nutritious meals shared by generous donors in your area. </p>
         </div>
         {/* cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 ">
