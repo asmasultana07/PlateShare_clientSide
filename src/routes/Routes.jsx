@@ -6,6 +6,10 @@ import Profile from "../pages/Profile";
 import Register from "../pages/Auth/Register";
 import Login from "../pages/Auth/Login";
 import ErrorPage from "../pages/Error/ErrorPage";
+import FoodDetails from "../pages/Foods/FoodDetails";
+import AddNewFoods from "../pages/Foods/AddNewFoods";
+import ManageFood from "../pages/Foods/ManageFood";
+import FoodRequest from "../pages/Foods/FoodRequest";
 
 
 

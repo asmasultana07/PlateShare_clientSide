@@ -54,24 +54,29 @@ const Navbar = () => {
             ) : user ? (
               <div className="navbar-end  hidden lg:flex">
                 <div className="dropdown dropdown-end">
-                  <div tabIndex={0} role="button"
-                    className="btn btn-ghost btn-circle avatar"  >
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className="btn btn-ghost btn-circle avatar"
+                  >
                     <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
-                      <img alt="Profile picture"
+                      <img
+                        alt="Profile picture"
                         src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
                       />
                     </div>
                   </div>
-                  <ul  tabIndex="-1"
-                className="menu menu-sm dropdown-content bg-[#eef5ed]  items-start rounded-box z-1 my-2 w-52 p-2 "
-              >
-                <li><NavLink to="/" className="my-btn"> Profile</NavLink></li>
-                <li><NavLink to="/create-food" className="my-btn"> Add Food</NavLink> </li>
-                <li><NavLink to="/manage-food" className="my-btn"> Manage My Foods</NavLink> </li>
-                <li><NavLink to="/food-request" className="my-btn"> My Food Requests</NavLink> </li>
-                 <li className="my-btn"> Logout </li>
-              </ul>
-              </div>
+                  <ul
+                    tabIndex="-1"
+                    className="menu menu-sm dropdown-content bg-[#eef5ed]  items-start rounded-box z-1 my-2 w-52 p-2 "
+                  >
+                    <li>  <NavLink to="/" className="my-btn">  Profile  </NavLink>  </li>
+                    <li> <NavLink to="/create-food" className="my-btn">  Add Food </NavLink> </li>
+                    <li> <NavLink to="/manage-food" className="my-btn">  Manage My Foods </NavLink>  </li>
+                    <li> <NavLink to="/food-request" className="my-btn">  My Food Requests  </NavLink>  </li>
+                    <li className="my-btn"> Logout </li>
+                  </ul>
+                </div>
               </div>
             ) : (
               <div className="navbar-end  hidden lg:flex">
@@ -108,38 +113,16 @@ const Navbar = () => {
                   ></path>{" "}
                 </svg>
               </div>
-              <ul  tabIndex="-1"
+              <ul
+                tabIndex="-1"
                 className="menu menu-sm dropdown-content bg-[#eef5ed]  items-start rounded-box z-1 my-2 w-52 p-2 "
               >
-                <li>
-                  {" "}
-                  <NavLink to="/" className="my-btn">
-                    {" "}
-                    Home{" "}
-                  </NavLink>{" "}
-                </li>
-                <li>
-                  {" "}
-                  <NavLink to="/available-foods" className="my-btn">
-                    {" "}
-                    Available Foods{" "}
-                  </NavLink>{" "}
-                </li>
-                <li className="w-full my-2">
-                  {" "}
-                  <Link to={"/registration"} className="sign-btn">
-                    {" "}
-                    Register{" "}
-                  </Link>{" "}
-                </li>
-                <li className="w-full">
-                  {" "}
-                  <Link to={"/login"} className="sign-btn">
-                    {" "}
-                    Login{" "}
-                  </Link>{" "}
-                </li>
-              </ul>
+                <li>  <NavLink to="/" className="my-btn">  Profile  </NavLink>  </li>
+                    <li> <NavLink to="/create-food" className="my-btn">  Add Food </NavLink> </li>
+                    <li> <NavLink to="/manage-food" className="my-btn">  Manage My Foods </NavLink>  </li>
+                    <li> <NavLink to="/food-request" className="my-btn">  My Food Requests  </NavLink>  </li>
+                    <li className="my-btn"> Logout </li>
+                  </ul>
             </div>
           </div>
         </div>

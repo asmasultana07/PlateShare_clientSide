@@ -22,19 +22,19 @@ const Banner = () => {
 
     return (
         <section className="relative bg-cover bg-center min-h-screen transition-all duration-2000" style={{ backgroundImage: `url(${bannerImages[current]})` }}>
-            <div className="absolute inset-0 bg-black/50">
-                <MyContainer className="relative z-10 p-20 text-center text-gray-200 flex flex-col gap-6 ">
+            <div className="absolute inset-0 bg-black/50 flex justify-center items-center">
+                <MyContainer className="relative z-10  text-center text-gray-200 flex flex-col gap-6 justify-center items-center">
 
                     <div>
-                        <h2 className="font-bold text-4xl md:text-7xl text-green-200  my-10"> A Plate of Food,
+                        <h2 className="font-bold text-4xl sm:text-7xl text-green-200 "> A Plate of Food,
                             <br/> <span className="block sm:mt-4">A Deed of Sadaqah</span></h2>
-                        <p className="sm:px-20 text-white text-xl md:text-2xl"> To build a society where no one goes hungry, food is not wasted, and every act of sharing is a source of reward (Sadaqah Jariyah) in the sight of Allah.
+                        <p className="sm:px-20 text-white text-xl sm:text-2xl mt-6"> To build a society where no one goes hungry, food is not wasted, and every act of sharing is a source of reward (Sadaqah Jariyah) in the sight of Allah.
                             Reduce food waste as encouraged in Islam
                         </p>
                     </div>
-                    <div className="flex flex-wrap gap-4 justify-center md:mt-6">
+                    <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
                         <Link to="/available-foods" className="donate-btn">View All Foods</Link>
-                        <Link to="/add-foods" className="donate-btn">Donate Food</Link>
+                        <Link to="/create-food" className="donate-btn">Donate Food</Link>
                     </div>
                 </MyContainer>
             </div>
