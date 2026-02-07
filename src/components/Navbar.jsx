@@ -48,8 +48,8 @@ const Navbar = () => {
                             <ul tabIndex="-1" className="menu menu-sm dropdown-content bg-[#eef5ed]  items-start rounded-box z-1 my-2 w-52 p-2 ">
                                 <li> <NavLink to="/" className="my-btn">  Home </NavLink> </li>
                                 <li> <NavLink to="/available-foods" className="my-btn"> Available Foods </NavLink> </li>
-                                <li className="w-full my-2">  <Link to="/register" className="sign-btn"> Register </Link> </li>
-                                <li className="w-full">  <Link to="/login" className="sign-btn"> Login </Link> </li>
+                                <li className="w-full my-2">  <Link to={'/registration'} className="sign-btn"> Register </Link> </li>
+                                <li className="w-full">  <Link to={'/login'}  className="sign-btn"> Login </Link> </li>
                             </ul>
 
                         </div>
