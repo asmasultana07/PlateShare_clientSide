@@ -1,6 +1,9 @@
 import React from "react"
+import usePageTitle from "../../hook/usePageTitle"
 
 const AvailableFoods = () => {
+    usePageTitle("Foods")
+
     const [search, setSearch] = useState('');
    
     if (loading) return (  <LoadingSpinner />);

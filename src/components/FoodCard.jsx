@@ -1,12 +1,13 @@
-import React from "react";
-import { LuArrowDownToLine } from "react-icons/lu";
-import { LuStar } from "react-icons/lu";
-import { Link } from "react-router";
-
+// import React from "react";
+// import { LuArrowDownToLine } from "react-icons/lu";
+// import { LuStar } from "react-icons/lu";
+// import { Link } from "react-router";
+// 
 const FoodCard = () => {
+  const {_id, food_name, food_image, food_quantity,pickup_location, expire_date, user_id, food_status} = food;
   
     return (
-    <Link to={`/food/${id}`}>
+    // <Link to={`/food/${id}`}>
     <div className="card bg-base-100 shadow-sm rounded-xl p-4 hover:scale-105 transition ease-in-out">
       <figure className=" ">
         <img src={image} alt="image loading" className="bg-[#D9D9D9] rounded-xl h-50 w-full object-cover"/>
@@ -17,7 +18,7 @@ const FoodCard = () => {
         <p className="bg-[#FFF0E1] text-[#FF8811] px-2 py-1 rounded-md flex justify-center items-center gap-2"><LuStar /> {ratingAvg}  </p>
       </div>
     </div>
-    </Link>
+    // </Link>
   );
 };
 

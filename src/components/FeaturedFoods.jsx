@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router";
 import LoadingSpinner from "./LoadingSpinner";
+import FoodCard from "./FoodCard";
 
 const FeaturedFood = () => {
 
@@ -17,15 +18,15 @@ const FeaturedFood = () => {
         </div>
         {/* cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 ">
-            {
-                showApps.map((app) => (
-                    <ShowApps key={app.id} app={app}> </ShowApps>
-                ))
-            }
+           <FoodCard></FoodCard>
+            {/* { */}
+                {/* FoodCard.map((food) => ( */}
+                    {/* <FoodCard key={food._id} food={food}> </FoodCard> */}
+                {/* )) */}
+            {/* } */}
         </div>
         <div className="flex justify-center items-center mt-12 ">
-            <Link to="/available-Foods" className="px-12 py-3 font-semibold  rounded-sm text-white text-[16px]   
-                                bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:from-pink-500 hover:to-purple-500">
+            <Link to="/available-foods" className="active-btn  ">
             Show all</Link>
         </div>
     </div>

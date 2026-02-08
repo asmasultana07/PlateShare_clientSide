@@ -3,9 +3,14 @@ import MyContainer from "./MyContainer";
 import { Link, NavLink } from "react-router";
 import logoImage from "../assets/logo.png";
 import { AuthContext } from "../Provider/AuthProvider";
+import auth from "../firebase/firebase.config";
 
 const Navbar = () => {
   const { user } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    signout(auth);
+  }
 
   const getNavActive = ({ isActive }) => {
     const navLink = "text-green-700 text-[18px] font-semibold active-btn";
@@ -50,7 +55,7 @@ const Navbar = () => {
                     <li> <NavLink to="/create-food" className={getNavActive}> Add Food </NavLink> </li>
                     <li> <NavLink to="/manage-food" className={getNavActive}> Manage My Foods </NavLink>  </li>
                     <li> <NavLink to="/food-request" className={getNavActive}> My Food Requests  </NavLink>  </li>
-                    <li className="my-btn"> Logout </li>
+                    <li onClick={handleLogOut} className="my-btn"> Logout </li>
                   </ul>
                 </div>
               </div>
