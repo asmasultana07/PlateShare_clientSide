@@ -11,7 +11,7 @@ const FeaturedFood = () => {
     // if (loading) return (  <LoadingSpinner />);
 
     return ( 
-         <div className="bg-[#f3f3f3] p-10 md:p-20">
+         <div className="p-10 md:p-20">
         <div className="text-center">
             <h1 className="text-bb font-bold text-4xl md:text-5xl">Feature Foods</h1>
             <p className="text-pp text-xl mt-5">Explore All nutritious meals shared by generous donors in your area. </p>
