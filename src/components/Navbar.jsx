@@ -100,10 +100,10 @@ const Navbar = () => {
                 
                 <li> <NavLink to="/" className={getNavActive}> Home  </NavLink> </li>
                 <li>  <NavLink to="/available-foods" className={getNavActive}>  Foods </NavLink> </li>
-                <div className="navbar-end  hidden lg:flex">
-                <Link to={"/registration"} className="my-btn"> Register </Link>
-                <Link to={"/login"} className="my-btn ml-3"> Login </Link>
-              </div>
+                <li>
+                <Link to="/registration" className="my-btn">Register </Link> </li>
+               <li><Link to="/login" className="my-btn "> Login </Link></li> 
+              
                 </ul>
                 )
               }
