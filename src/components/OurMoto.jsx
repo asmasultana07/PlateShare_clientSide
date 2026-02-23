@@ -13,7 +13,7 @@ const OurMoto = () => {
           <p className="w-90  bg-green-200 text-green-600 text-[17px] font-semibold rounded-md">
             Turning surplus food into shared hope
           </p>
-          <p className="md:px-75 text-pp text-[16px] md:text-xl">
+          <p className="lg:px-75 text-pp text-[16px] md:text-xl">
             Through our community-driven platform, we’ve helped reduce food
             waste while supporting people in need. Every shared meal strengthens
             local connections, promotes sustainability, and creates real
